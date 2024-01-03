@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+.gre{
+    background: #40050b;
+    background: -webkit-linear-gradient(to right, #9b0c0c, #900303); 
+    background: linear-gradient(to right, #562828, #901a1a); 
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   height: 100vh;
+   width: 100vw;
+}
+.yakuza{
+    color:grey;
+    padding-top: 10px;
+}
+.container {
+height:40vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border-radius: 1rem;
+}
+.sam {
+     width:80%;    
+     height: 5vh;
+     border-radius: 10px;
+     margin: 5px;
+     outline: none;
+     border: none;
+     padding-left: 15px;
+     background-color:#d8f0e59d;
+     border-bottom: 5px transparent;
+} 
+.fr1 h2{
+font-family: 'Kanit', sans-serif;
+color:rgb(1, 1, 1);
+font-size:28px;
+/* padding-bottom: px; */
+color:grey;
+}
+.fr1{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #000000;
+padding-top: 20px;
+color: #fff;
+border-radius: 20px;
+height: 50vh;
+width:25vw;
+gap:0.3rem;
+box-shadow:
+2.8px 2.8px 3.2px rgba(0, 0, 0, 0.02),
+6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.fr1 input{
+    /* background-color: #ffffff30; */
+    border:.5px solid grey;
+    background-color:black;
+    color:gray;
+    font-family: 'Kanit', sans-serif;
+}
+.sub1{
+    background-color:grey;
+}
+.crate{
+background-color: grey;
+width:6rem;
+margin-top: 20px;
+color:grey;
+border-radius: 8px;
+height: 35px;
+text-align: center;
+padding-right: 20px;
+cursor: pointer;
+}
+.crate:hover {
+background-color: rgb(116, 116, 116);
+}
+
+input:focus{
+border-bottom: 2px solid rgb(207, 173, 35);  
+}

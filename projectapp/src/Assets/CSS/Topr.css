@@ -1,0 +1,94 @@
+.navbar
+{
+    margin: 0%;
+    width:100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 15px 7%;
+    background-color: rgb(11, 11, 11);
+    position: sticky;
+    position: fixed;
+}
+ul{
+    flex:1;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 450px;
+    list-style: none;
+}
+ul li{
+    display: inline;
+    margin:10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    list-style: none;
+    color: #9c9c9c;
+}
+a{
+    font-family:'Verdana';
+    text-decoration: none;
+}
+
+ul li:hover{
+    color: orangered;
+}
+.H
+{
+    color: rgb(128, 0, 0);
+    padding-left: 120px;
+}
+.L{
+    color: rgb(227, 30, 30);
+}
+.K{
+    color: rgb(195, 191, 191)
+}
+button{
+    display: inline;
+    margin:10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+.search-box
+{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background: rgb(248, 245, 245);
+}
+.search-box input{
+    padding:6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #000000;
+    font-size: 18px;
+    max-width: 200px;
+}
+.search-box :-ms-input::placeholder{
+    color:#fff;
+}
+.logo
+{
+    height: 100px;
+    width: 100px;
+    cursor:pointer;
+}
+.search-box img{
+    width: 20px;
+    cursor: pointer;
+}
+.co{
+    color: black;
+}
+.profileIcon{
+    height: 50px;
+    width: 50px;
+}

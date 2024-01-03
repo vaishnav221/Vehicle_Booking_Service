@@ -1,0 +1,7 @@
+.ma{
+    background: #40050b;
+    background: -webkit-linear-gradient(to right, #9b0c0c, #900303); 
+    background: linear-gradient(to right, #562828, #901a1a);
+    width:100%;
+    height: 100%;
+}
