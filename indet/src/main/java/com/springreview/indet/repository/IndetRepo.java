@@ -1,5 +1,7 @@
 package com.springreview.indet.repository;
 
+import java.util.Optional;
+
 // import java.util.Optional;
 
 // import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
@@ -13,4 +15,6 @@ public interface IndetRepo extends JpaRepository<IndetModel,Integer>{
 
     // Optional<User> findByUsername(String username);
     IndetModel findByName(String name);
+    Optional<IndetModel> findById(Long id);
 } 
+

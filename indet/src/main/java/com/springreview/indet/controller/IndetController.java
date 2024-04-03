@@ -31,4 +31,33 @@ public class IndetController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
+
+    @PutMapping("/update/{id}") // Update the mapping to include the 'id' parameter
+    public ResponseEntity<IndetModel> updateData(@PathVariable Long id, @RequestBody IndetModel indetModel) {
+    
+        IndetModel existingIndetModel = indetService.getById(id);
+        if (existingIndetModel != null) {
+            existingIndetModel.setName(indetModel.getName()); // Update name
+            existingIndetModel.setPassword(indetModel.getPassword()); // Update password
+            // Update other properties as needed
+    
+            IndetModel updatedIndetModel = indetService.signUp(existingIndetModel); // Save the updated entity
+            return new ResponseEntity<>(updatedIndetModel, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND); // Indicate that the entity with the given id was not found
+        }
+    }
+    
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<Void> delete(@PathVariable("id") Long id) {
+        boolean deleted = indetService.delete(id);
+        if (deleted) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+
 }

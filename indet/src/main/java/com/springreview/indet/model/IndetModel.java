@@ -9,12 +9,12 @@ import jakarta.persistence.Id;
 public class IndetModel {
       @Id
       @GeneratedValue(strategy = GenerationType.IDENTITY)
-      private int id;
+      private Long id;
       private String name;
       private String number;
       private String password;
 
-      public IndetModel(int id, String name, String number, String password) {
+      public IndetModel(Long id, String name, String number, String password) {
 		this.id = id;
 		this.name = name;
 		this.number = number;
@@ -26,11 +26,11 @@ public class IndetModel {
   
     }
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
