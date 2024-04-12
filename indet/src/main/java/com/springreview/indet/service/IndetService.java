@@ -61,4 +61,6 @@ public class IndetService {
         Optional<IndetModel> optionalIndetModel = indetRepo.findById(id);
         return optionalIndetModel.orElse(null);
     }
+
+    
 }
